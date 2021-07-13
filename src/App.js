@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import myWonderfulImage from "./Fakhri.jpg"
+import vid from "./received_175028923802943.mp4"
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{border:"solid 1px black",maxWidth:"100vw"}}>
+      <div>
+      <h1 className="title red">Fakhri Abousaoud Kahouach</h1>
+      <br />
+      <img src={myWonderfulImage} alt="Moi 1"></img>
+      <br />
+      <img src="/Fakhri1.jpg" alt="Moi 2"></img>
+      </div>
+
+      <video width="320" height="240" controls>
+        <source src={vid} type="video/mp4"></source>
+      </video>
+      
     </div>
   );
 }
